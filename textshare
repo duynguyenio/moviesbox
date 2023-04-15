@@ -1,37 +1,4 @@
-         UIApplication.shared.open(URL(string: "https://itunes.apple.com/app/id\(Constants.ITUNE_APP_ID)?action=write-review")!, options: [:], completionHandler: nil)
-                 
-                }
-                
-            }
-            else {
-                self.         UIApplication.shared.open(URL(string: "https://itunes.apple.com/app/id\(Constants.ITUNE_APP_ID)?action=write-review")!, options: [:], completionHandler: nil)
-                 
-                }
-                
-            }
-            else {
-                self.         UIApplication.shared.open(URL(string: "https://itunes.apple.com/app/id\(Constants.ITUNE_APP_ID)?action=write-review")!, options: [:], completionHandler: nil)
-                 
-                }
-                
-            }
-            else {
-                self.         UIApplication.shared.open(URL(string: "https://itunes.apple.com/app/id\(Constants.ITUNE_APP_ID)?action=write-review")!, options: [:], completionHandler: nil)
-                 
-                }
-                
-            }
-            else {
-                self.         UIApplication.shared.open(URL(string: "https://itunes.apple.com/app/id\(Constants.ITUNE_APP_ID)?action=write-review")!, options: [:], completionHandler: nil)
-                 
-                }
-                
-            }
-            else {
-                self.         UIApplication.shared.open(URL(string: "https://itunes.apple.com/app/id\(Constants.ITUNE_APP_ID)?action=write-review")!, options: [:], completionHandler: nil)
-                 
-                }
-                
-            }
-            else {
-                self.
+text 1:
+https://apps.apple.com/app/id1661964972
+text 2 :
+https://apps.apple.com/us/app/applock-applocker-lock-apps/id1666744130
