@@ -1,1 +1,7 @@
-https://apps.apple.com/app/id1666744130
+{
+    "data": {
+        "urlShare": "https://example.com",
+        "index": 123,
+        "textShare": "Check out this cool website!"
+    }
+}
