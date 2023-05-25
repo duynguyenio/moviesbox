@@ -1,0 +1,53 @@
+<?php
+// Firebase configuration
+$firebaseConfig = [
+    'apiKey' => 'YOUR_API_KEY',
+    'authDomain' => 'YOUR_PROJECT_ID.firebaseapp.com',
+    'databaseURL' => 'https://YOUR_PROJECT_ID.firebaseio.com',
+    'projectId' => 'YOUR_PROJECT_ID',
+    'storageBucket' => 'YOUR_PROJECT_ID.appspot.com',
+    'messagingSenderId' => 'YOUR_MESSAGING_SENDER_ID',
+    'appId' => 'YOUR_APP_ID'
+];
+
+// Initialize Firebase
+$firebase = new \Firebase\FirebaseLib($firebaseConfig['databaseURL'], $firebaseConfig['apiKey']);
+
+// Check if the form is submitted
+if (isset($_POST['submit'])) {
+    // Get form data
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+
+    // Create a new entry in the Firebase database
+    $firebase->push('/contacts', [
+        'name' => $name,
+        'email' => $email,
+        'message' => $message,
+        'timestamp' => time() // Optional: Add a timestamp
+    ]);
+}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PHP Firebase Form</title>
+</head>
+<body>
+    <h1>Contact Form</h1>
+    <form method="post" action="">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required><br><br>
+
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" required></textarea><br><br>
+
+        <input type="submit" name="submit" value="Submit">
+    </form>
+</body>
+</html>
